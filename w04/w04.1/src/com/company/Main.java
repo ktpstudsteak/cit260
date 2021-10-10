@@ -13,8 +13,6 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Enter a hexadecimal number: ");
-
         String strHexIn = in.next();
 
         //array of options
