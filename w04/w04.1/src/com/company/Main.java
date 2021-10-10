@@ -18,11 +18,13 @@ public class Main {
         System.out.print("\n");
 
         //array of options
-//      arrHex[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E",  "F"};
         List<String> arrHex = Arrays.asList("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E",  "F");
 
-        //If not in there error out
+        //turn input to uppercase
+//        String strHexIn2 = strHexIn.toUpperCase();
+        strHexIn = strHexIn.toUpperCase();
 
+        //If not in there error out
         boolean boolValidIn = arrHex.contains(strHexIn);
 
         if (boolValidIn) {
