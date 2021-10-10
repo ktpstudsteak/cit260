@@ -32,7 +32,14 @@ public class W04dot2 {
         //Calculate Gross Pay
         double dblGross = dblHourlyWage * dblHoursWorked;
 
-        //
+        //Calculate State Tax Withheld
+        double dblState = .09 * dblGross;
+
+        //Calculate Federal Tax Withheld
+        double dblFed = .2 * dblGross;
+
+        //Calculate Net Pay
+        double dblNet = dblGross - (dblFed + dblState);
 
 //    ################################################################################################################
         //Output Name
@@ -47,13 +54,22 @@ public class W04dot2 {
         System.out.print("Hourly Wage: $" + strHourlyWage);
 
         //Output Gross Pay
+        String strGross = String.valueOf(dblGross);
+        System.out.print("Gross Pay: $" +strGross);
 
         //Output State Tax Withheld
+        String strState = String.valueOf(dblState);
+        System.out.print("State Tax Withheld: $" + strState);
 
         //Output Federal Tax Withheld
+        String strFed = String.valueOf(dblFed);
+        System.out.print("Federal Tax Withheld: $" + strFed);
 
         //Output Net Pay
+        String strNet = String.valueOf(dblNet);
+        System.out.println("Net Pay: $" + strNet);
 
+        //Goodbye
         System.out.println("Goodbye");
     }
 }
