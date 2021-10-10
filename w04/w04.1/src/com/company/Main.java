@@ -15,6 +15,8 @@ public class Main {
 
         String strHexIn = in.next();
 
+        System.out.print("\n");
+
         //array of options
 //      arrHex[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E",  "F"};
         List<String> arrHex = Arrays.asList("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E",  "F");
