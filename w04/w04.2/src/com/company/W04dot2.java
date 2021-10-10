@@ -41,35 +41,35 @@ public class W04dot2 {
         //Calculate Net Pay
         double dblNet = dblGross - (dblFed + dblState);
 
+        //Spacer
+        System.out.println("\n");
+
 //    ################################################################################################################
+
+
         //Output Name
-        System.out.print("Pay Stub for " + strName);
+        System.out.print("Pay Stub for " + strName + "\n");
 
         // Output Hours
-        String strHours = String.valueOf(dblHoursWorked);
-        System.out.println("Hours Worked: " + strHours);
+        System.out.printf("Hours Worked: %.2f\n", dblHoursWorked);
 
         //Output Hourly Wage
-        String strHourlyWage = String.valueOf(dblHourlyWage);
-        System.out.println("Hourly Wage: $" + strHourlyWage);
+        System.out.printf("Hourly Wage: $%.2f\n", dblHourlyWage);
 
         //Output Gross Pay
-        String strGross = String.valueOf(dblGross);
-        System.out.println("Gross Pay: $" +strGross);
+        System.out.printf("Gross Pay: $%.2f\n", dblGross);
 
         //Output State Tax Withheld
-        String strState = String.valueOf(dblState);
-        System.out.println("State Tax Withheld: $" + strState);
+        System.out.printf("State Tax Withheld: $%.2f\n", dblState);
 
         //Output Federal Tax Withheld
-        String strFed = String.valueOf(dblFed);
-        System.out.println("Federal Tax Withheld: $" + strFed);
+        System.out.printf("Federal Tax Withheld: $%.2f\n", dblFed);
 
         //Output Net Pay
-        String strNet = String.valueOf(dblNet);
-        System.out.println("Net Pay: $" + strNet);
+        System.out.printf("Net Pay: $%.2f\n", dblNet);
+
 
         //Goodbye
-        System.out.println("Goodbye");
+        System.out.println("\nGoodbye");
     }
 }
