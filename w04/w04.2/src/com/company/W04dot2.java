@@ -47,23 +47,23 @@ public class W04dot2 {
 
         // Output Hours
         String strHours = String.valueOf(dblHoursWorked);
-        System.out.print("Hours Worked: " + strHours);
+        System.out.println("Hours Worked: " + strHours);
 
         //Output Hourly Wage
         String strHourlyWage = String.valueOf(dblHourlyWage);
-        System.out.print("Hourly Wage: $" + strHourlyWage);
+        System.out.println("Hourly Wage: $" + strHourlyWage);
 
         //Output Gross Pay
         String strGross = String.valueOf(dblGross);
-        System.out.print("Gross Pay: $" +strGross);
+        System.out.println("Gross Pay: $" +strGross);
 
         //Output State Tax Withheld
         String strState = String.valueOf(dblState);
-        System.out.print("State Tax Withheld: $" + strState);
+        System.out.println("State Tax Withheld: $" + strState);
 
         //Output Federal Tax Withheld
         String strFed = String.valueOf(dblFed);
-        System.out.print("Federal Tax Withheld: $" + strFed);
+        System.out.println("Federal Tax Withheld: $" + strFed);
 
         //Output Net Pay
         String strNet = String.valueOf(dblNet);
