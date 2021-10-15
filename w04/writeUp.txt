@@ -1,0 +1,19 @@
+
+1.   What things went well for you this week?
+	I breezed through 4.2. I was able to focus on the style and organization rather 
+	than just making it work.
+
+2.   What was challenging for you this week?
+	I had a hard time understanding the logic behind 4.1. I'm still not sure how to apply
+	what we were taught, but I did manage to find a solution that worked.
+
+3    How can you overcome these challenges?
+	Study harder and play with the code more.
+
+	I can also do more of the examples in the slides.
+
+4.   What was most engaging for you this week?
+	Overcoming the challenges I had in 4.1. 
+
+	Understanding how arrays in lists work in java
+	rather than in python was a good expirience.
