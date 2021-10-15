@@ -3,20 +3,19 @@ package com.company;
 public class w05dot2 {
 
     public static void main(String[] args) {
-	// Purpose
+        // Purpose
         System.out.println("This program displays all of the numbers from 100 to 1000\n" +
-                            "that are divisible by both 5 and 6.");
-        int f;
+                "that are divisible by both 5 and 6.\n");
+        int itemsInRow = 0;
         for (int i = 100; i <= 1000; i++) {
-            f = i;
-            for (y = 1; y <= 10; y++){
-
-                if(f % 5 == 0 && f % 6 == 0 ){
-
+            if ((i % 5 == 0) && (i % 6 == 0)) {
+                System.out.printf("%-4d ", i);
+                itemsInRow++;
+                if (itemsInRow > 10) {
+                    itemsInRow = 0;
+                    System.out.println();
                 }
             }
-
-
         }
 
     }
