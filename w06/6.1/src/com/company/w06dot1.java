@@ -17,7 +17,7 @@ public class w06dot1 {
         double dblFuture;
         for (int i = 1; i <= 10; i++){
             dblFuture = investmentAmount * Math.pow(1 + monthlyInterestRate, i * 12);
-            System.out.printf("%d\t\t$%.2f\n",i, dblFuture);
+            System.out.printf("%d\t\t\t$%.2f\n",i, dblFuture);
         }
 
     }
@@ -48,11 +48,11 @@ public class w06dot1 {
         }
 
         //Convert to a percentage
-        dblRate = dblRate / 100;
+        dblRate = (dblRate / 100) / 12;
 
         //Calculate future investment value
         futureValue(dblInvestment,dblRate);
 
-
+        System.out.println("\nGoodbye...");
     }
 }
