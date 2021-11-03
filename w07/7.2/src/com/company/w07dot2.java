@@ -1,18 +1,6 @@
 package com.company;
 
 public class w07dot2 {
-
-//    private static double[][] array;
-//
-//    public static double findSum(double[][] array) {
-//        w07dot2.array = array;
-//        int sum = 0;
-//        for (double value : array) {
-//            sum += value;
-//        }
-//        return sum;
-//    }
-
     public static void main(String[] args) {
         //purpose
         System.out.println("This Program computes the number of hours worked for a set of hourly employees.\n");
@@ -29,11 +17,19 @@ public class w07dot2 {
                 {0.0, 0.0, 0.0, 0.0, 5.25, 5.25, 6.0}
         };
 
+        double[] dblInLoop = new double[5];
         //Need to find a way to sum up array before I start output
+        for (int i =0; i < 5; i++){
+            double sum = 0;
+            for (int j =0; j<7; j++) {
+                sum = sum + dblArray[i][j];
+            }
+            dblInLoop[i] = sum;
+        }
         //Print Headings
         System.out.println("Employee Name \t\t\t Total Hours");
-        for (int i  = 0; i >5 ; i++)  {
-            System.out.printf("%s \t\t\t ")
+        for (int i  = 0; i <5 ; i++)  {
+            System.out.printf("%-15s \t\t %.2f\n", strNames[i], dblInLoop[i]);
         }
     }
 }
