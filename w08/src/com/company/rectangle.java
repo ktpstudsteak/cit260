@@ -13,21 +13,19 @@ public class rectangle {
     }
 
     //Allows them not to be just one? delete if it doesn't work.
-    rectangle(double pWidth, double pHeight){
-        width = pWidth;
-        height = pHeight;
-    }
+//    rectangle(double pWidth, double pHeight){
+//        width = pWidth;
+//        height = pHeight;
+//    }
 
 
     /**
      * the getArea method
      * Purpose: To calculate the area of a rectangle object
-     * @param  pWidth the width of the rectangle object
-     * @param pHeight the height of the rectangle object
      * @return double
      */
-    public static double getArea(double pWidth, double pHeight){
-        return pHeight * pWidth;
+    public double getArea(){
+        return this.width * this.height;
     }
 
     /**
@@ -37,7 +35,7 @@ public class rectangle {
      * @param pHeight the height of the rectangle object
      * @return double
      */
-    public double getPerimeter(double pWidth, double pHeight){
+    public static double getPerimeter(double pWidth, double pHeight){
         return (pWidth * 2) + (pHeight * 2);
     }
 
@@ -55,7 +53,7 @@ public class rectangle {
      * Purpose: Returns the height AFTER it has been set by setHeight()
      * @return double
      */
-    public double getHeight() {
+    public static double getHeight() {
         return height;
     }
 
@@ -76,6 +74,4 @@ public class rectangle {
     public double getWidth() {
         return width;
     }
-
-
 }
