@@ -3,14 +3,20 @@ package com.company;
 public class rectangle {
    private double height;
    private double width;
-//   private double area;
-//   private double perimeter;
 
-    //Constructors
+    //Constructors:
+
+    //default
     rectangle(){
         width = 1;
         height = 1;
     }
+
+    rectangle(double pWidth, double pHeight){
+        width = pWidth;
+        height = pHeight;
+    }
+
 
     /**
      * the getArea method
