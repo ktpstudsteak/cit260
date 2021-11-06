@@ -18,11 +18,20 @@ public class w08dot1 {
         r2.setHeight(3.50);
 
         //Output r1
-        System.out.printf("Rectangle 1:\n" +
-                "height = %-.2f\n" +
-                "width = %-.2f\n" +
-                "area = %-.2f\n" +
-                "perimeter = %-.2f\n\n", rectangle. )
+        System.out.printf("""
+                        Rectangle 1:
+                        height = %.2f
+                        width = %.2f
+                        area = %.2f
+                        perimeter = %.2f
+
+                        """,
+
+
+                rectangle.getHeight(),
+                rectangle.getWidth(),
+                rectangle.getArea(),
+                rectangle.getPerimeter());
     }
 }
 

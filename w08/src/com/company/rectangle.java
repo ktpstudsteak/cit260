@@ -1,8 +1,8 @@
 package com.company;
 
 public class rectangle {
-   private double height;
-   private double width;
+   private static double height;
+   private static double width;
 
     //Constructors:
 
@@ -24,19 +24,17 @@ public class rectangle {
      * Purpose: To calculate the area of a rectangle object
      * @return double
      */
-    public double getArea(){
-        return this.width * this.height;
+    public static double getArea(){
+        return width * height;
     }
 
     /**
      * the getPerimeter method
      * Purpose: To calculate the perimeter of a rectangle object
-     * @param  pWidth the width of the rectangle object
-     * @param pHeight the height of the rectangle object
      * @return double
      */
-    public static double getPerimeter(double pWidth, double pHeight){
-        return (pWidth * 2) + (pHeight * 2);
+    public static double getPerimeter(){
+        return (width * 2) + (height * 2);
     }
 
     /**
@@ -45,7 +43,7 @@ public class rectangle {
      * @param pHeight the height of the rectangle object being given by the user
      */
     public void setHeight(double pHeight) {
-        this.height = pHeight;
+        height = pHeight;
     }
 
     /**
@@ -63,7 +61,7 @@ public class rectangle {
      * @param pWidth the width of the rectangle object being given by the user
      */
     public void setWidth(double pWidth) {
-        this.width = pWidth;
+        width = pWidth;
     }
 
     /**
@@ -71,7 +69,7 @@ public class rectangle {
      * Purpose: Returns the height AFTER it has been set by setWidth()
      * @return double
      */
-    public double getWidth() {
+    public static double getWidth() {
         return width;
     }
 }
