@@ -10,12 +10,12 @@ public class w08dot1 {
         rectangle r2 = new rectangle();
 
         //Set r1
-        r1.setWidth(40.00);
-        r1.setHeight(4.00);
+        r1.height = 4.00;
+        r1.width = 40.00;
 
         //Set r2
-        r2.setWidth(5.00);
-        r2.setHeight(3.50);
+        r2.height = 3.50;
+        r2.width = 5.00;
 
         //Output r1
         System.out.printf("""
@@ -24,14 +24,23 @@ public class w08dot1 {
                         width = %.2f
                         area = %.2f
                         perimeter = %.2f
-
+                        
+                        Rectangle 2:
+                        height = %.2f
+                        width = %.2f
+                        area = %.2f
+                        perimeter = %.2f
                         """,
 
+                r1.getHeight(),
+                r1.getWidth(),
+                r1.getArea(),
+                r1.getPerimeter(),
 
-                rectangle.getHeight(),
-                rectangle.getWidth(),
-                rectangle.getArea(),
-                rectangle.getPerimeter());
+                r2.getHeight(),
+                r2.getWidth(),
+                r2.getArea(),
+                r2.getPerimeter());
     }
 }
 
