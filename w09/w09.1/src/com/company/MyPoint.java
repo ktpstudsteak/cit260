@@ -4,8 +4,8 @@ import java.awt.geom.Point2D;
 
 public class MyPoint {
     //Params
-    public  int x;
-    public  int y;
+    private int x;
+    private int y;
 
     //Getters and setters
 
@@ -32,7 +32,7 @@ public class MyPoint {
      *
      * @return The x value
      */
-    public  double getX() {
+    public  int getX() {
         return x;
     }
 
@@ -50,7 +50,7 @@ public class MyPoint {
      *
      * @return y The Y value
      */
-    public double getY() {
+    public int getY() {
         return y;
     }
 

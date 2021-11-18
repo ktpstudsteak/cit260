@@ -28,7 +28,11 @@ public class w09dot1 {
         //Create mp2 object
         MyPoint mp2 = new MyPoint(intX, intY);
 
-        System.out.println("mp1.x & y: " + mp1.x + " " + mp1.y);
-//        System.out.printf("Using method 1, the distance from (%d,%d) to (%d,%d) is %.2f\n", MyPoint.x, MyPoint.y, x, y, MyPoint.distance(x,y));
+//        System.out.println("mp1.x & y: " + mp1.getX() + " " + mp1.getY());
+        System.out.printf("Using method 1, the distance from (%d,%d) to (%d,%d) is %.2f\n", mp1.getX(), mp1.getY(), mp2.getX(), mp2.getY(), mp1.distance(intX, intY));
+        System.out.printf("Using method 1, the distance from (%d,%d) to (%d,%d) is %.2f\n", mp1.getX(), mp1.getY(), mp2.getX(), mp2.getY(), mp1.distance(mp2));
+        System.out.printf("Using method 1, the distance from (%d,%d) to (%d,%d) is %.2f\n", mp1.getX(), mp1.getY(), mp2.getX(), mp2.getY(), MyPoint.distance(mp1, mp2));
+
+
     }
 }
