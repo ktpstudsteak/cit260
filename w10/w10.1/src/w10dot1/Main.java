@@ -11,17 +11,18 @@ public class Main {
                 """);
         Scanner in = new Scanner(System.in);
 
-        //get sides
-        double side1 = in.nextDouble();
-		double side2 = in.nextDouble();
-		double side3 = in.nextDouble();
-
         //prompt for color
         System.out.print("Enter the color of the triangle (e.g. \"red\"): ");
 		String color = in.next();
 
         System.out.print("Is the triangle filled (y or n): ");
         boolean filled = in.nextBoolean();
+
+        //get sides
+        System.out.print("Enter the non-zero, positive lengths of the three sides of the triangle: ");
+        double side1 = in.nextDouble();
+        double side2 = in.nextDouble();
+        double side3 = in.nextDouble();
 
         // create triangle object
         Triangle triangle = new Triangle(side1, side2, side3);
