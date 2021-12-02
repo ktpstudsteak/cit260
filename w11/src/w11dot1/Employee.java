@@ -11,7 +11,7 @@ public class Employee {
 
     Employee(String name, int serial){
         this.name = name;
-        serialNumber = serial;
+        this.serialNumber = serial;
     }
     // Getter for name
     public String getName() {
@@ -42,6 +42,10 @@ public class Employee {
         return 0;
     }
 
-
-
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", serialNumber=" + serialNumber +
+                '}';
+    }
 }

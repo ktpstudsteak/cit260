@@ -9,9 +9,10 @@ public class Hourly extends Employee{
         hoursWorked = 0.0;
     }
 
-    Hourly(double wage, double hours){
-        hourlyWage = wage;
-        hoursWorked = hours;
+    Hourly(double wage, double hours,String name, int serial){
+        super(name,serial);
+        this.hourlyWage = wage;
+        this.hoursWorked = hours;
     }
 //    Wage Getter
     public double getHourlyWage() {
@@ -36,5 +37,18 @@ public class Hourly extends Employee{
     @Override
     public double getFedWithholding() {
         return getGrossPay() * .15;
+    }
+
+    @Override
+    public String toString() {
+        System.out.printf("""
+                Employee: %s Serial: %d
+                Gross Pay: $%.2f
+                Federal Withholding: $%.2f
+                State Withholding: $%.2f
+                Net Pay: $%.2f
+                
+                """,this.name,this.serialNumber,this.getGrossPay(),this.getFedWithholding(),this.getStateWithholding(), (getGrossPay() - (getFedWithholding() + getStateWithholding())));
+        return "";
     }
 }
