@@ -1,16 +1,9 @@
 package w11dot1;
 
 public class Salaried extends Employee{
-    private double annualSalary;
-
-    Salaried(){
-        annualSalary = 0.0;
-    }
+    private final double annualSalary;
 
     /**
-     * @param name
-     * @param serial
-     * @param salary
      */
     Salaried(String name, int serial, double salary){
         super(name,serial);
@@ -18,15 +11,6 @@ public class Salaried extends Employee{
     }
 
     /**
-     * @return
-     */
-//    Salary getter
-    public double getAnnualSalary() {
-        return annualSalary;
-    }
-
-    /**
-     * @return
      */
     @Override
     public double getGrossPay() {
@@ -34,7 +18,6 @@ public class Salaried extends Employee{
     }
 
     /**
-     * @return
      */
     @Override
     public double getFedWithholding() {
@@ -42,7 +25,6 @@ public class Salaried extends Employee{
     }
 
     /**
-     * @return
      */
     @Override
     public double getStateWithholding() {
@@ -50,7 +32,6 @@ public class Salaried extends Employee{
     }
 
     /**
-     * @return
      */
     @Override
     public String toString() {
@@ -59,7 +40,7 @@ public class Salaried extends Employee{
                 Gross Pay: $%.2f
                 Federal Withholding: $%.2f
                 State Withholding: $%.2f
-                Net Pay: $%.2f       
+                Net Pay: $%.2f
                 """,this.name,this.serialNumber,this.getGrossPay(),this.getFedWithholding(),this.getStateWithholding(), (getGrossPay() - (getFedWithholding() + getStateWithholding())));
         return "";
     }
