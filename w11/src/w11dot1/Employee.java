@@ -30,5 +30,18 @@ public class Employee {
         this.serialNumber = serialNumber;
     }
 
+    public double getGrossPay(){
+        return 0;
+    }
+
+    public double getFedWithholding(){
+        return 0;
+    }
+
+    public double getStateWithholding(){
+        return 0;
+    }
+
+
 
 }
