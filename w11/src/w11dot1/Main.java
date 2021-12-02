@@ -12,8 +12,8 @@ public class Main {
 
         System.out.println("Payroll Report");
 
-        for (int i=0; i < employeeList.size(); i++){
-            System.out.println(employeeList.get(i).toString());
+        for (Employee employee : employeeList) {
+            System.out.println(employee.toString());
 //            System.out.printf("""
 //                    Employee: % Serial: 123
 //                    Gross Pay: $450.00
