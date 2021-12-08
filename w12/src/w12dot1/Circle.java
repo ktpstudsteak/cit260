@@ -3,7 +3,18 @@ package w12dot1;
 public class Circle extends Shape {
     public double radius;
     final double PI = Math.PI;
-    private final int id = 156;
+
+
+
+
+    /**
+     * Get Identifier
+     */
+    @Override
+    public int getId() {
+        int id = 156;
+        return id;
+    }
 
     /**
      * NoArg Constructor

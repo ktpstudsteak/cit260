@@ -13,7 +13,15 @@ public class Square extends Shape {
 
     //Identifier
     public double side;
-    private final int id = 237;
+
+    /**
+     * Get Identifier
+     */
+    @Override
+    public int getId() {
+        int id = 237;
+        return id;
+    }
 
     /**
      * Returns Area

@@ -4,8 +4,14 @@ public class Triangle extends Shape {
     private final double base;
     private final double height;
 
-    //Identifier
-    private final int id = 212;
+    /**
+     * Get Identifier
+     */
+    @Override
+    public int getId() {
+        //Identifier
+        return 212;
+    }
 
     public Triangle() {
         base = 0;
