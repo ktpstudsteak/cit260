@@ -1,8 +1,9 @@
 package w12dot1;
 
-public class Circle implements Shape{
-    private double radius;
+public class Circle extends Shape {
+    public double radius;
     final double PI = Math.PI;
+    private final int id = 156;
 
     /**
      * NoArg Constructor
@@ -13,7 +14,6 @@ public class Circle implements Shape{
 
     /**
      * Arg Constructor
-     * @param radius
      */
     public Circle(double radius) {
         this.radius = radius;
@@ -21,7 +21,6 @@ public class Circle implements Shape{
 
     /**
      * Gets Radius
-     * @return
      */
     public double getRadius() {
         return radius;
@@ -29,21 +28,18 @@ public class Circle implements Shape{
 
     /**
      * Sets Radius
-     * @param radius
      */
     public void setRadius(double radius) {
         this.radius = radius;
     }
 
+
     /**
      * The Area Method
      * Purpose: Returns the area in a double. Will be overridden for each class
-     * @return
      */
     @Override
     public double area() {
         return PI * Math.pow(radius, 2);
     }
-
-
 }

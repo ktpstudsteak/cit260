@@ -1,11 +1,10 @@
 package w12dot1;
 
-public interface Shape {
+public abstract class Shape {
+    int identifier;
+
     /**
-     * The Area Method
-     * Purpose: Returns the area in a double. Will be overridden for each class
-     * @return
+     * Returns Area
      */
-    double area();
-    int identifier = 0;
+    public abstract double area();
 }
