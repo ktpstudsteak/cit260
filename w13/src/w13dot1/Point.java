@@ -1,8 +1,8 @@
 package w13dot1;
 
 public class Point {
-    private int x;
-    private int y;
+    public int x;
+    public int y;
 
     Point(){
         this.x = 0;

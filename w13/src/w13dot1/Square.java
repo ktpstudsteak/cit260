@@ -2,32 +2,32 @@ package w13dot1;
 
 public class Square extends Shape {
 
-    //Constructor
-    Square() {
-        side = 0.0;
-    }
+    public double side;
 
-    public Square(double side) {
+    //Constructor
+    public Square(int id, Point point, double side) {
+        super(id, point);
         this.side = side;
     }
 
-    //Identifier
-    public double side;
+    public double getSide() {
+        return side;
+    }
 
-    /**
-     * Get Identifier
-     */
-    @Override
-    public int getId() {
-        int id = 237;
-        return id;
+    public void setSide(double side) {
+        this.side = side;
     }
 
     /**
      * Returns Area
      */
     @Override
-    public double area() {
+    public double getArea() {
         return Math.pow(side, 2);
+    }
+
+    @Override
+    public String getName() {
+        return "Square";
     }
 }
